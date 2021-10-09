@@ -20,7 +20,6 @@ const renderProduct = (...product) => {
 const renderPage = list => {
     const productsList = list.map(item => renderProduct(item.title, item.price)).join('');
     console.log(productsList);
-    productsList.r
     document.querySelector('.products').innerHTML = productsList;
 };
 
